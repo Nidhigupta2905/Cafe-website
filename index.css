@@ -1,0 +1,64 @@
+.header::before {
+  /* background: url("https://source.unsplash.com/collection/190727/1600x900")
+    no-repeat center center/cover; */
+  background: url("images/1.jpg") no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 85%;
+  top: 0;
+  left: 0;
+  content: "";
+  z-index: -1;
+  /* background: rgba(0, 0, 0, 0.7); */
+  /* opacity: 0.9; */
+  /* linear-gradient: (rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));  */
+  /* filter: sepia(100%) saturate(200%) brightness(70%) hue-rotate(330deg); */
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  /* display: block; */
+}
+
+.home {
+  color: white;
+}
+
+.home h1,
+.home a {
+  text-shadow: 5px 5px 10px black;
+}
+
+.home a:hover {
+  color: #ffc107;
+}
+
+/* .home > p {
+  padding: 80px 150px;
+} */
+
+section {
+  color: grey;
+}
+body {
+  color: grey;
+  /* font-family: Georgia, "Times New Roman", Times, serif; */
+}
+.container-fluid {
+  padding: 0px;
+}
+
+/* .style {
+  text-shadow: 20px 2px 50px black;
+} */
+.col-md-12 a {
+  color: white;
+  text-decoration: none;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+footer li {
+  list-style-type: none;
+}
+h1 {
+  font-family: "Suranna", serif;
+  color: grey;
+}

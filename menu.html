@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="bootstrap.min.css" /> -->
+    <title>Menu</title>
+    <link rel="stylesheet" href="index.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <style>
+      .header::before{
+        height: 50%;
+      }
+        *{
+            color: black;   
+        }
+        .backtotop{
+            color: grey;
+        }
+        a:hover{
+            text-decoration: none;
+            color:#FFC107;
+        }
+        .header::before {
+  background: url("https://source.unsplash.com/collection/190727/1600x900")
+    no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  top: 0;
+  left: 0;
+  content: "";
+  z-index: -1;
+  /* background: rgba(0, 0, 0, 0.7); */
+  /* opacity: 0.9; */
+  /* linear-gradient: (rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));  */
+  /* filter: sepia(100%) saturate(200%) brightness(70%) hue-rotate(330deg); */
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  /* display: block; */
+}
+.header{
+   color: white !important;;
+}
+.section_footer *{
+  color: grey;
+}
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid header text-center">
+        <br />
+        <div class="home">
+          <h1 style="color:white">Best Buddy's Cafe</h1>
+          <img
+            src="images/logo.jpg"
+            alt=""
+            width="60"
+            class="img-thumbnail"
+          /><br /><br />
+          <em style="color:white">Eat. Drink. Love.</em>
+          <br /><br /><br />
+  
+          <div class="row">
+            <div class="col-md-12">
+              <a href="index.html">Home</a>
+              <a href="#">Menu</a>
+              <a href="reservation.html">Reservation</a>
+              <a href="food_gallery.html">Food Gallery</a>
+              <a href="about_us.html">About Us</a>
+              <a href="contact_us.html">Contact Us</a>  
+              <br><br><br>
+            </div>
+          </div>
+          </div>
+    </div>
+      <!-- <table class="table table-striped table-hover table-responsive-xs">
+        <thead>
+            <tr>
+              <th class="text-center" colspan="2"><h2>WAFFLES</h2></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-center">The Classic Belgian</td>
+              <td class="text-left">₹220</td>
+            </tr>
+            <tr>
+              <td class="text-center">Best Berry Vanilla</td>
+              <td class="text-left">₹240</td>
+            </tr>
+            <tr>
+              <td class="text-center">Choco Blast</td>
+              <td class="text-left">₹240</td>
+            </tr>
+            <tr>
+              <td class="text-center">Roasted Peanut &amp; Caramel</td>
+              <td class="text-left">₹250</td>
+            </tr>
+            <tr>
+              <td class="text-center">Monkey Chunky</td>
+              <td class="text-left">₹250</td>
+            </tr>
+            <tr>
+              <td colspan="2" class="text-center">
+                <a href="#backtotop" class="backtotop">Back to Top</a>
+              </td>
+            </tr>
+          </tbody>
+      </table> -->
+      <!-- <li>
+                <a
+                  href="#"
+                  class="nav-link text-white dropdown-toggle hover"
+                  data-toggle="dropdown"
+                  aria-expanded="false"
+                  >Menu</a
+                >
+                <ul
+                  class="dropdown-menu"
+                  style="background-color: #5e6778 !important"
+                >
+                  <li>
+                    <a
+                      href="#Waffles"
+                      style="background-color: #5e6778 !important"
+                      class="dropdown-item menulist"
+                      >Waffles</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#Waffizza"
+                      style="background-color: #5e6778 !important"
+                      class="dropdown-item menulist"
+                      >Waffizza</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#Breakfast"
+                      style="background-color: #5e6778 !important"
+                      class="dropdown-item menulist"
+                      >All Day Breakfast</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#Soupandsalad"
+                      style="background-color: #5e6778 !important"
+                      class="dropdown-item menulist"
+                      >Soups and Salads</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#Main"
+                      style="background-color: #5e6778 !important"
+                      class="dropdown-item menulist"
+                      >Main Course</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#Pizzaandpasta"
+                      style="background-color: #5e6778 !important"
+                      class="dropdown-item menulist"
+                      >Pizza and Pasta</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#Burgerandsandwich"
+                      style="background-color: #5e6778 !important"
+                      class="dropdown-item menulist"
+                      >Burgers and Sandwiches</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#Pancakes"
+                      style="background-color: #5e6778 !important"
+                      class="dropdown-item menulist"
+                      >Pancakes</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#Rollsmania"
+                      style="background-color: #5e6778 !important"
+                      class="dropdown-item menulist"
+                      >Rolls-Mania</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#Fingerfood"
+                      style="background-color: #5e6778 !important"
+                      class="dropdown-item menulist"
+                      >Finger Foods</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#Beverages"
+                      style="background-color: #5e6778 !important"
+                      class="dropdown-item menulist"
+                      >Beverages</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#Desert"
+                      style="background-color: #5e6778 !important"
+                      class="dropdown-item menulist"
+                      >Desert</a
+                    >
+                  </li>
+                </ul>
+              </li> -->
+             <br>
+    <h1 class="text-center" style="color:grey">Menu</h1><br>
+      <a name="Waffles"
+        ><table
+          class="table table-striped table-hover table-responsive-xs"  id="backtotop"
+        >
+          <thead>
+            <tr>
+              <th class="text-center" colspan="2"><h2>WAFFLES</h2></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-center">The Classic Belgian</td>
+              <td class="text-left">₹220</td>
+            </tr>
+            <tr>
+              <td class="text-center">Best Berry Vanilla</td>
+              <td class="text-left">₹240</td>
+            </tr>
+            <tr>
+              <td class="text-center">Choco Blast</td>
+              <td class="text-left">₹240</td>
+            </tr>
+            <tr>
+              <td class="text-center">Roasted Peanut &amp; Caramel</td>
+              <td class="text-left">₹250</td>
+            </tr>
+            <tr>
+              <td class="text-center">Monkey Chunky</td>
+              <td class="text-left">₹250</td>
+            </tr>
+            <tr>
+              <td colspan="2" class="text-center">
+                <a href="#backtotop" class="backtotop">Back to Top</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </a>
+
+      <a name="Waffizza"
+        ><table
+          class="table table-striped table-hover table-responsive-xs"
+        >
+          <thead>
+            <tr>
+              <th class="text-center" colspan="2"><h2>WAFFIZZA</h2></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-center">Margherita</td>
+              <td class="text-left">₹260</td>
+            </tr>
+            <tr>
+              <td class="text-center">Fresh Veggies</td>
+              <td class="text-left">₹280</td>
+            </tr>
+            <tr>
+              <td class="text-center">Cottage Cheese</td>
+              <td class="text-left">₹299</td>
+            </tr>
+            <tr>
+              <td colspan="2" class="text-center">
+                <a href="#backtotop" class="backtotop"
+                  >Back to Top</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </a>
+
+      <a name="Pancakes"
+        ><table
+          class="table table-striped table-hover table-responsive-xs"
+        >
+          <thead>
+            <tr>
+              <th class="text-center" colspan="2"><h2>PANCAKES</h2></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-center">Blueberry Heaven</td>
+              <td class="text-left">₹230</td>
+            </tr>
+            <tr>
+              <td class="text-center">Egg-o-logy</td>
+              <td class="text-left">₹235</td>
+            </tr>
+            <tr>
+              <td class="text-center">Banarama</td>
+              <td class="text-left">₹240</td>
+            </tr>
+            <tr>
+              <td class="text-center">Humpty Dumpty</td>
+              <td class="text-left">₹240</td>
+            </tr>
+            <tr>
+              <td colspan="2" class="text-center">
+                <a href="#backtotop" class="backtotop"
+                  >Back to Top</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </a>
+
+      <a name="Breakfast"
+        ><table
+          class="table table-striped table-hover table-responsive-xs"
+        >
+          <thead>
+            <tr>
+              <th class="text-center" colspan="2">
+                <h2>ALL DAY BREAKFAST STATION</h2>
+                <p
+                  class="table text-center"
+                  style="background-color: transparent"
+                >
+                  ( 3 eggs served with potatoes wedges and whole wheat bread )
+                </p>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-center">Classic Cheese</td>
+              <td class="text-left">₹160</td>
+            </tr>
+            <tr>
+              <td class="text-center">Desi Masala</td>
+              <td class="text-left">₹150</td>
+            </tr>
+            <tr>
+              <td class="text-center">Cheesy Ham</td>
+              <td class="text-left">₹170</td>
+            </tr>
+            <tr>
+              <td class="text-center">Toasted Sunny Side Up</td>
+              <td class="text-left">₹150</td>
+            </tr>
+            <tr>
+              <td class="text-center">Mr. Perfect Poached Eggs</td>
+              <td class="text-left">₹170</td>
+            </tr>
+            <tr>
+              <td class="text-center">Scrambled Eggs on Toast</td>
+              <td class="text-left">₹150</td>
+            </tr>
+            <tr>
+              <td class="text-center">Bun Omlette</td>
+              <td class="text-left">₹125</td>
+            </tr>
+            <tr>
+              <td class="text-center">Bun Maska &amp; Ghar ki Chai</td>
+              <td class="text-left">₹125</td>
+            </tr>
+            <tr>
+              <td colspan="2" class="text-center">
+                <a href="#backtotop" class="backtotop">Back to Top</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </a>
+
+      <a name="Soupandsalad"
+        ><table
+          class="table table-striped table-hover table-responsive-xs"
+        >
+          <thead>
+            <tr>
+              <th class="text-center" colspan="2">
+                <h2>FROM THE BOWL SOUPPPE</h2>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-center">Tomato Basil Pesto</td>
+              <td class="text-left">₹140</td>
+            </tr>
+            <tr>
+              <td class="text-center">Cream of Broccoli</td>
+              <td class="text-left">₹190</td>
+            </tr>
+            <tr>
+              <td class="text-center">Cream of Mushroom</td>
+              <td class="text-left">₹190</td>
+            </tr>
+            <tr>
+              <td class="text-center">Chicken &amp; Fresh Herb</td>
+              <td class="text-left">₹190</td>
+            </tr>
+            <tr>
+              <td class="text-center">Dan Dan Chilli Spaghetti</td>
+              <td class="text-left">₹140</td>
+            </tr>
+            <tr>
+              <td class="text-center">Vegetable &amp; Corn Chowder</td>
+              <td class="text-left">₹190</td>
+            </tr>
+            <tr>
+              <td class="text-center">Manchow</td>
+              <td class="text-left">₹140/₹160</td>
+            </tr>
+            <tr>
+              <td class="text-center">Lung Fung</td>
+              <td class="text-left">₹140/₹160</td>
+            </tr>
+            <tr>
+              <td class="text-center">Hot &amp; Sour</td>
+              <td class="text-left">₹140/₹160</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="text-center">
+                  <a href="#backtotop" class="backtotop">Back to Top</a>
+                </td>
+              </tr>
+          </tbody>
+          <thead>
+            <tr>
+              <th class="text-center" colspan="2"><h2>SALAD SENSATION</h2></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-center">Mexican Salad</td>
+              <td class="text-left">₹250</td>
+            </tr>
+            <tr>
+              <td class="text-center">Exotic Veg. Grilled</td>
+              <td class="text-left">₹250</td>
+            </tr>
+            <tr>
+              <td class="text-center">Ceasar</td>
+              <td class="text-left">₹299</td>
+            </tr>
+            <tr>
+              <td class="text-center">Smoked Chicken</td>
+              <td class="text-left">₹320</td>
+            </tr>
+            <tr>
+              <td class="text-center">Fried Chicken</td>
+              <td class="text-left">₹299</td>
+            </tr>
+            <tr>
+              <td colspan="2" class="text-center">
+                <a href="#backtotop" class="backtotop">Back to Top</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </a>
+
+      <a name="Burgerandsandwich"
+        ><table
+          class="table table-striped table-hover table-responsive-xs"
+        >
+          <thead>
+            <tr>
+              <th class="text-center" colspan="2">
+                <h2>BURGERS AND SANDWICHES</h2>
+                <h4 class="text-center">CLUBHOUSE SANDWICH</h4>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-center">Veggie Lovers</td>
+              <td class="text-left">₹250</td>
+            </tr>
+            <tr>
+              <td class="text-center">Ultimate Chicken</td>
+              <td class="text-left">₹299</td>
+            </tr>
+            <tr>
+              <td class="text-center">Ham &amp; Cheese</td>
+              <td class="text-left">₹299</td>
+            </tr>
+          </tbody>
+          <thead>
+            <tr>
+              <th class="text-center" colspan="2">
+                <h4 class="text-center">GRILLED SANDWICH</h4>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-center">Goodness of Corn &amp; Spanich</td>
+              <td class="text-left">₹240</td>
+            </tr>
+            <tr>
+              <td class="text-center">Chicken Panini</td>
+              <td class="text-left">₹299</td>
+            </tr>
+            <tr>
+              <td class="text-center">Mushroom &amp; Pepper</td>
+              <td class="text-left">₹299</td>
+            </tr>
+            <tr>
+              <td class="text-center">Smokey Chicken &amp; Justy Vegetable</td>
+              <td class="text-left">₹299</td>
+            </tr>
+          </tbody>
+          <thead>
+            <tr>
+              <th class="text-center" colspan="2">
+                <h4 class="text-center">BURGERS</h4>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-center">BBC Veg Cheese</td>
+              <td class="text-left">₹210</td>
+            </tr>
+            <tr>
+              <td class="text-center">Cottage Cheese Corn Chilli</td>
+              <td class="text-left">₹250</td>
+            </tr>
+            <tr>
+              <td class="text-center">Spicy Chicken &amp; Cheese</td>
+              <td class="text-left">₹270</td>
+            </tr>
+            <tr>
+              <td class="text-center">Southern Fried Chicken &amp; Cheese</td>
+              <td class="text-left">₹270</td>
+            </tr>
+            <tr>
+              <td colspan="2" class="text-center">
+                <a href="#backtotop" class="backtotop">Back to Top</a>
+              </td>
+            </tr>
+          </tbody>
+        </table></a
+      >
+
+      <a name="Fingerfood"
+        ><table
+          class="table table-striped table-hover table-responsive-sm"
+          style="
+            margin-top: 50px;
+            margin-left: 0px;
+            margin-right: 0px;
+           
+          "
+        >
+          <thead>
+            <tr>
+              <th class="text-center" colspan="2"><h2>FINGER FOODS</h2></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-center">Hummus &amp; Pita</td>
+              <td class="text-left">₹169</td>
+            </tr>
+            <tr>
+              <td class="text-center">Towering Onion Rings</td>
+              <td class="text-left">₹220</td>
+            </tr>
+            <tr>
+              <td class="text-center">Garlic Bread</td>
+              <td class="text-left">₹120</td>
+            </tr>
+            <tr>
+              <td class="text-center">Garlic Bread With Cheese</td>
+              <td class="text-left">₹150</td>
+            </tr>
+            <tr>
+              <td class="text-center">
+                French Fries(Piri Piri Mayo/Hot Garlic Sauce/Mexican Style)
+              </td>
+              <td class="text-left">₹150</td>
+            </tr>
+            <tr>
+              <td class="text-center">
+                Potato Wedges(Homemade Garlic Mayo/Sour Cream/Chipotle Mayo)
+              </td>
+              <td class="text-left">₹180</td>
+            </tr>
+            <tr>
+              <td class="text-center">Corn &amp; Cheese Nuggets</td>
+              <td class="text-left">₹150</td>
+            </tr>
+            <tr>
+              <td class="text-center">Texas Chilli Toast</td>
+              <td class="text-left">₹150</td>
+            </tr>
+            <tr>
+              <td class="text-center">Nachos Grande</td>
+              <td class="text-left">₹220</td>
+            </tr>
+            <tr>
+              <td class="text-center">Crispy Fried Honey Chilli Potato</td>
+              <td class="text-left">₹220</td>
+            </tr>
+            <tr>
+              <td class="text-center">
+                Spinach, Cottage Cheese &amp; Feta Biscuit Canapes
+              </td>
+              <td class="text-left">₹275</td>
+            </tr>
+            <tr>
+              <td class="text-center">Awesomosas</td>
+              <td class="text-left">₹275</td>
+            </tr>
+            <tr>
+              <td class="text-center">
+                Oh!Maggi with Mezze sticks (Plain/Arrabiata/Red Thai Curry)
+              </td>
+              <td class="text-left">₹125/₹155/₹155</td>
+            </tr>
+            <tr>
+              <td class="text-center">Maggie plain /Masala</td>
+              <td class="text-left">₹155</td>
+            </tr>
+            <tr>
+              <td class="text-center">Satay Chicken Sticks</td>
+              <td class="text-left">₹320</td>
+            </tr>
+            <tr>
+              <td class="text-center">Dragon Fried Baby Corn</td>
+              <td class="text-left">₹295</td>
+            </tr>
+            <tr>
+              <td class="text-center">Falafel With Hummus</td>
+              <td class="text-left">₹295</td>
+            </tr>
+            <tr>
+              <td class="text-center">Chinese Bhel</td>
+              <td class="text-left">₹195</td>
+            </tr>
+            <tr>
+              <td class="text-center">Fusion Marinated BBQ Chicken Wings</td>
+              <td class="text-left">₹320</td>
+            </tr>
+            <tr>
+              <td class="text-center">Chicken Shish Touk</td>
+              <td class="text-left">₹395</td>
+            </tr>
+            <tr>
+              <td class="text-center">
+                Classic Chilli (Paneer/Mushroom/Chicken)
+              </td>
+              <td class="text-left">₹295/₹295/₹345</td>
+            </tr>
+            <tr>
+              <td colspan="2" class="text-center">
+                <a href="#backtotop" class="backtotop">Back to Top</a>
+              </td>
+            </tr>
+          </tbody>
+        </table></a
+      >
+
+      <a name="Rollsmania"
+        ><table
+          class="table table-striped table-hover table-responsive-sm"
+        >
+          <thead>
+            <tr>
+              <th class="text-center" colspan="2"><h2>ROLLS-MANIA</h2></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-center">Egg Salsa</td>
+              <td class="text-left">₹150</td>
+            </tr>
+            <tr>
+              <td class="text-center">Classic Veggie</td>
+              <td class="text-left">₹130</td>
+            </tr>
+            <tr>
+              <td class="text-center">Kathi Paneer</td>
+              <td class="text-left">₹180</td>
+            </tr>
+            <tr>
+              <td class="text-center">Chicken Kathi Roll</td>
+              <td class="text-left">₹210</td>
+            </tr>
+            <tr>
+              <td class="text-center">Shawarma Veg/Chicken</td>
+              <td class="text-left">₹210/₹250</td>
+            </tr>
+
+            <tr>
+              <td colspan="2" class="text-center">
+                <a href="#backtotop" class="backtotop">Back to Top</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </a>
+
+      <a name="Pizzaandpasta"
+        ><table
+          class="table table-striped table-hover table-responsive-xs"
+        >
+          <thead>
+            <tr>
+              <th class="text-center" colspan="2">
+                <h2 class="text-center">THE PIZZERIA SHOP</h2>
+                <p class="text-center" style="background-color: transparent">
+                  Only thin crust pizza
+                </p>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-center">Margherita</td>
+              <td class="text-left">₹280</td>
+            </tr>
+            <tr>
+              <td class="text-center">Garden Green</td>
+              <td class="text-left">₹299</td>
+            </tr>
+            <tr>
+              <td class="text-center">Spicy Chicken &amp; Jalapenos</td>
+              <td class="text-left">₹330</td>
+            </tr>
+            <tr>
+              <td class="text-center">Smoked Chicken &amp; BBQ</td>
+              <td class="text-left">₹340</td>
+            </tr>
+            <tr>
+              <td class="text-center">Paneer Capers &amp; Peppers</td>
+              <td class="text-left">₹310</td>
+            </tr>
+            <tr>
+              <td class="text-center">Paneer Tikka Pizza</td>
+              <td class="text-left">₹310</td>
+            </tr>
+            <tr>
+              <td class="text-center">Chicken Tikka Pizza</td>
+              <td class="text-left">₹350</td>
+            </tr>
+            <tr>
+              <td class="text-center">Chicken Fajita Pizza</td>
+              <td class="text-left">₹350</td>
+            </tr>
+            <tr>
+              <td class="text-center">Chicken Sausages Pizza</td>
+              <td class="text-left">₹350</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="text-center">
+                  <a href="#backtotop" class="backtotop">Back to Top</a>
+                </td>
+              </tr>
+          </tbody>
+          <thead>
+            <tr>
+              <th class="text-center" colspan="2">
+                <h2>PASTA</h2>
+                <p class="text-center" style="background-color: transparent">
+                  Penne/Spaghetti
+                </p>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-center">Arrabiatta</td>
+              <td class="text-left">₹299</td>
+            </tr>
+            <tr>
+              <td class="text-center">Alfredo</td>
+              <td class="text-left">₹299</td>
+            </tr>
+            <tr>
+              <td class="text-center">Pesto Cream</td>
+              <td class="text-left">₹299</td>
+            </tr>
+            <tr>
+              <td class="text-center">Aglio Olio</td>
+              <td class="text-left">₹299</td>
+            </tr>
+            <tr>
+              <td class="text-center">Creamy Pesto</td>
+              <td class="text-left">₹299</td>
+            </tr>
+            <tr>
+              <td class="text-center">Salsa Rosa Con Verdure</td>
+              <td class="text-left">₹299</td>
+            </tr>
+            <tr>
+              <td colspan="2" class="text-center">
+                <a href="#backtotop" class="backtotop">Back to Top</a>
+              </td>
+            </tr>
+          </tbody>
+        </table></a
+      >
+
+      <a name="Main"
+        ><table
+          class="table table-striped table-hover table-responsive-xs"
+        >
+          <thead>
+            <tr>
+              <th class="text-center" colspan="2"><h2>MAINS</h2></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-center">Stroganoff</td>
+              <td class="text-left">₹360/₹390</td>
+            </tr>
+            <tr>
+              <td class="text-center">Vegetable Au Gratin</td>
+              <td class="text-left">₹390</td>
+            </tr>
+            <tr>
+              <td class="text-center">Chicken Cacciatore</td>
+              <td class="text-left">₹390</td>
+            </tr>
+            <tr>
+              <td class="text-center">Chicken Piccata</td>
+              <td class="text-left">₹390</td>
+            </tr>
+            <tr>
+              <td class="text-center">Paneer Cannaloni</td>
+              <td class="text-left">₹390</td>
+            </tr>
+            <tr>
+              <td class="text-center">Grilled Chicken Breast</td>
+              <td class="text-left">₹390</td>
+            </tr>
+            <tr>
+              <td class="text-center">Thai Curry with Steamed Rice</td>
+              <td class="text-left">₹399/₹430</td>
+            </tr>
+            <tr>
+              <td class="text-center">Fish &amp; Chips</td>
+              <td class="text-left">₹599</td>
+            </tr>
+            <tr>
+              <td class="text-center">Grilled Fish</td>
+              <td class="text-left">₹630</td>
+            </tr>
+            <tr>
+              <td class="text-center">Fish Parmigiana</td>
+              <td class="text-left">₹630</td>
+            </tr>
+            <tr>
+              <td class="text-center">Hakka Noodles</td>
+              <td class="text-left">₹199/₹250</td>
+            </tr>
+            <tr>
+              <td class="text-center">Schezwan Chilli Garlic Noodles/Rice</td>
+              <td class="text-left">₹199/₹250</td>
+            </tr>
+            <tr>
+              <td class="text-center">Burnt Garlic Noodles</td>
+              <td class="text-left">₹199/₹250</td>
+            </tr>
+            <tr>
+              <td class="text-center">Sweet &amp; Sour Gravy</td>
+              <td class="text-left">₹240/₹290</td>
+            </tr>
+            <tr>
+              <td class="text-center">
+                Baby Corn &amp; Mushroom in Schezwan Sauce
+              </td>
+              <td class="text-left">₹290</td>
+            </tr>
+            <tr></tr>
+            <tr>
+              <td class="text-center">Chinese Chill Chicken</td>
+              <td class="text-left">₹350</td>
+            </tr>
+            <tr>
+              <td class="text-center">Veg Momos</td>
+              <td class="text-left">₹150</td>
+            </tr>
+            <tr>
+              <td class="text-center">Non Veg Momos</td>
+              <td class="text-left">₹189</td>
+            </tr>
+            <tr>
+              <td colspan="2" class="text-center">
+                <a href="#backtotop" class="backtotop">Back to Top</a>
+              </td>
+            </tr>
+          </tbody>
+        </table></a
+      >
+
+      <a name="Beverages"
+        ><table
+          class="table table-striped table-hover table-responsive-sm"
+        >
+          <thead>
+            <tr>
+              <th class="text-center" colspan="2"><h2>HOT COFFEE</h2></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-center">Espresso</td>
+              <td class="text-left">₹85</td>
+            </tr>
+            <tr>
+              <td class="text-center">Macchiato</td>
+              <td class="text-left">₹100</td>
+            </tr>
+            <tr>
+              <td class="text-center">Americano</td>
+              <td class="text-left">₹85</td>
+            </tr>
+            <tr>
+              <td class="text-center">Irish Coffee</td>
+              <td class="text-left">₹130</td>
+            </tr>
+            <tr>
+              <td class="text-center">Cappuccino</td>
+              <td class="text-left">₹ 100</td>
+            </tr>
+            <tr>
+              <td class="text-center">Cafe Latte</td>
+              <td class="text-left">₹ 130</td>
+            </tr>
+            <tr>
+              <td class="text-center">Cafe Mocha</td>
+              <td class="text-left">₹130</td>
+            </tr>
+            <tr>
+              <td class="text-center">
+                <h3>Make it yours with</h3>
+                <p class="text-center" style="background-color: transparent">
+                  Vanilla/Irish/Hazelnut/Caramel/Peanut Butter
+                </p>
+              </td>
+              <td class="text-left">₹40</td>
+            </tr>
+            <tr>
+              <th class="text-center">
+                <h3>GREEN TEA</h3>
+                <p class="text-center" style="background-color: transparent">
+                  Earl Gray/lemon/camomile/jasmine
+                </p>
+              </th>
+              <th class="text-left">₹75</th>
+            </tr>
+            <tr>
+              <th class="text-center">
+                <h3>HOT CHOCOLATE</h3>
+                <p class="text-center" style="background-color: transparent">
+                  Personalize it with
+                </p>
+                <p class="text-center" style="background-color: transparent">
+                  Hazelnut/Irish/Vanilla/Caramel/Peant Butter (₹40)
+                </p>
+              </th>
+              <th class="text-left">₹100</th>
+            </tr>
+            <tr>
+              <th class="text-center">
+                <h3>CHAI SHAI</h3>
+                <p class="text-center" style="background-color: transparent">
+                  Masala/Ginger/Elaichi/Assam
+                </p>
+                <p class="text-center" style="background-color: transparent">
+                  Add Flavour (₹10)
+                </p>
+              </th>
+              <th class="text-left">₹75</th>
+            </tr>
+          </tbody>
+
+          <thead>
+            <tr>
+              <th class="text-center" colspan="2"><h2>FRAPPE</h2></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-center">Loaded Cold Coffee</td>
+              <td class="text-left">₹180</td>
+            </tr>
+            <tr>
+              <td class="text-center">Iced Cappuccino</td>
+              <td class="text-left">₹130</td>
+            </tr>
+            <tr>
+              <td class="text-center">Loaded Cafe Frappe</td>
+              <td class="text-left">₹180</td>
+            </tr>
+            <tr>
+              <td class="text-center">Iced Americano</td>
+              <td class="text-left">₹100</td>
+            </tr>
+            <tr>
+              <td class="text-center">Loaded Caramel</td>
+              <td class="text-left">₹180</td>
+            </tr>
+            <tr>
+              <td class="text-center">Brownie Chocolate</td>
+              <td class="text-left">₹180</td>
+            </tr>
+            <tr>
+              <td class="text-center" colspan="2">
+                <h2>NAUGHTY MILKSHAKES</h2>
+              </td>
+            </tr>
+            <tr>
+              <td class="text-center">Oreo D Latte</td>
+              <td class="text-left">₹180</td>
+            </tr>
+            <tr>
+              <td class="text-center">Kit Kat</td>
+              <td class="text-left">₹180</td>
+            </tr>
+            <tr>
+              <td class="text-center">Nutty Banana</td>
+              <td class="text-left">₹200</td>
+            </tr>
+            <tr>
+              <td class="text-center">Dark Forest Mocha</td>
+              <td class="text-left">₹180</td>
+            </tr>
+            <tr>
+              <td class="text-center">Chocolate Banana</td>
+              <td class="text-left">₹180</td>
+            </tr>
+            <tr>
+              <td class="text-center">Gooey Chocolate Shakes</td>
+              <td class="text-left">₹200</td>
+            </tr>
+            <tr>
+              <td class="text-center">Boost in the Secret</td>
+              <td class="text-left">₹180</td>
+            </tr>
+          </tbody>
+          <thead>
+            <tr>
+              <th class="text-center" colspan="2">
+                <h2>SENSATIONAL SLUSHES</h2>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-center">Cool Dude</td>
+              <td class="text-left">₹150</td>
+            </tr>
+            <tr>
+              <td class="text-center">LAD Sangria</td>
+              <td class="text-left">₹160</td>
+            </tr>
+            <tr>
+              <td class="text-center">Virgin Mojito</td>
+              <td class="text-left">₹160</td>
+            </tr>
+            <tr>
+              <td class="text-center">Peach Mojito</td>
+              <td class="text-left">₹160</td>
+            </tr>
+            <tr>
+              <td class="text-center">Cool Green Mojito</td>
+              <td class="text-left">₹170</td>
+            </tr>
+            <tr>
+              <td class="text-center">Green Apple Sparkle</td>
+              <td class="text-left">₹150</td>
+            </tr>
+            <tr>
+              <td class="text-center">Passion Cooler</td>
+              <td class="text-left">₹160</td>
+            </tr>
+            <tr>
+              <td class="text-center">Chilli Chilled Guvava</td>
+              <td class="text-left">₹160</td>
+            </tr>
+          </tbody>
+
+          <thead>
+            <tr>
+              <th class="text-center" colspan="2">
+                <h2>INNOCENT SMOOTHIES</h2>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-center">Blueberry Colada</td>
+              <td class="text-left">₹180</td>
+            </tr>
+            <tr>
+              <td class="text-center">Boost is the Secret</td>
+              <td class="text-left">₹180</td>
+            </tr>
+            <tr>
+              <td class="text-center">Berry &amp; Strawberry</td>
+              <td class="text-left">₹180</td>
+            </tr>
+            <tr>
+              <td class="text-center">Mango &amp; Passsion Fruit</td>
+              <td class="text-left">₹180</td>
+            </tr>
+            <tr>
+              <td colspan="2" class="text-center">
+                <a href="#backtotop" class="backtotop">Back to Top</a>
+              </td>
+            </tr>
+          </tbody>
+        </table></a
+      >
+
+      <a name="Drinks">
+        <table
+          class="table table-striped table-hover table-responsive-xs"
+        >
+          <thead>
+            <tr>
+              <th class="text-center" colspan="2"><h2>DRINKS</h2></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-center">Choco Frappe</td>
+              <td class="text-left">₹200</td>
+            </tr>
+            <tr>
+              <td class="text-center">Devils Frappe</td>
+              <td class="text-left">₹200</td>
+            </tr>
+            <tr>
+              <td class="text-center">Mocha Chillow</td>
+              <td class="text-left">₹200</td>
+            </tr>
+            <tr>
+              <td class="text-center">Choco Rocks</td>
+              <td class="text-left">₹180</td>
+            </tr>
+            <tr>
+              <td class="text-center">Iced Tea Cranberry</td>
+              <td class="text-left">₹120</td>
+            </tr>
+            <tr>
+              <td class="text-center">Cranberry Soda</td>
+              <td class="text-left">₹170</td>
+            </tr>
+          </tbody>
+        </table></a
+      >
+      <a name="Desert">
+        <table
+          class="table table-striped table-hover table-responsive-xs"
+        >
+          <thead>
+            <tr>
+              <th class="text-center" colspan="2"><h2>DESSERTS</h2></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-center">Chocolate Walnut Brownie</td>
+              <td class="text-left">₹120</td>
+            </tr>
+            <tr>
+              <td class="text-center">Chocolate Truffle</td>
+              <td class="text-left">₹120</td>
+            </tr>
+            <tr>
+              <td class="text-center">Red Velvet</td>
+              <td class="text-left">₹120</td>
+            </tr>
+            <tr>
+              <td class="text-center">Ice Cream (2 scoops)</td>
+              <td class="text-left">₹140</td>
+            </tr>
+
+            <tr>
+              <td class="text-center" colspan="2">
+                <p class="text-center" style="background-color: transparent">
+                  <i>Taxes as applicable</i>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" class="text-center">
+                <a href="#backtotop" class="backtotop">Back to Top</a>
+              </td>
+            </tr>
+          </tbody>
+        </table></a
+      >
+
+      <footer class="section section_footer" style="background-color: black;">
+        <br /><br /><br /><br />
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <!-- About Us -->
+              <h5 class="section_footer__heading" style="color: #e7a637">
+                About Us
+              </h5>
+              <p>
+                Best buddy’s cafe is an up-to-the-minute epochal, bringing
+                newest source of coffee, food and merry making experience for
+                all the cafe lovers.
+              </p>
+            </div>
+            <div class="col-sm-4">
+              <!-- Contact info -->
+              <h5 class="section_footer__heading" style="color: #e7a637">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Contact info
+              </h5>
+              <ul class="section_footer__info">
+                <li>
+                  <i class="fas fa-map-marker-alt">
+                   </i
+                  > Pacific Hills, Dehradun, Pin:248001
+                </li>
+                <li><i class="fas fa-phone"></i> 0135-2733892</li>
+                <li>
+                  <i class="far fa-envelope"></i>
+                  <a href="#" style="text-decoration: none; color: blue;"
+                    >Bestbuddyscafe@domain.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-4">
+              <!-- Opening hours -->
+              <h5 class="section_footer__heading" style="color: #e7a637">
+                Opening hours
+              </h5>
+              <div class="section_footer__open">
+                <div class="section_footer__open__days">Monday - Thursday</div>
+                <div class="section_footer__open__time">10:00 AM - 9:00 PM</div>
+              </div>
+              <div class="section_footer__open">
+                <div class="section_footer__open__days">Friday - Sunday</div>
+                <div class="section_footer__open__time">
+                  11:00 AM - 05:00 PM
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- / .row -->
+          <div class="row">
+            <div class="col-12">
+              <!-- Copyright -->
+              <div class="section_footer__copyright">
+                © <span id="js-current-year">2021 by TB</span>.All rights
+                reserved.
+              </div>
+            </div>
+          </div>
+          <!-- / .row -->
+        </div>
+        <!-- / .container -->
+        <br /><br /><br />
+      </footer>
+    </div>
+  </body>
+</html>
